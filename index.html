@@ -1,15 +1,365 @@
 
-<a class="link"
-   href="https://www.instagram.com/chris.lauron/"
-   target="_blank"
-   rel="noopener noreferrer">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#08070D">
 
-  <span class="link-icon">◎</span>
+<title>CHRIS | Digital Contact Card</title>
 
-  <span class="link-info">
-    <strong>Instagram</strong>
-    <small>@chris.lauron</small>
-  </span>
+<meta name="description" content="Connect with CHRIS through Facebook, Instagram and GCash.">
 
-  <span class="arrow">↗</span>
-</a>
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  padding: 30px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:
+    radial-gradient(ellipse at top, #24133e 0%, #100b19 38%, #08070d 75%);
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  padding: 30px 23px;
+  background: rgba(18, 15, 27, .96);
+  border: 1px solid #49316b;
+  border-radius: 25px;
+  box-shadow: 0 25px 75px rgba(0,0,0,.65),
+              0 0 30px rgba(139,92,246,.10);
+  text-align: center;
+  animation: appear .7s ease;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.brand {
+  color: #A78BFA;
+  font-size: 10px;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  margin: 22px auto 17px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 3px solid #8B5CF6;
+  box-shadow: 0 0 25px #8B5CF677;
+  background: #211638;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 31px;
+  letter-spacing: 6px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #A78BFA;
+  font-size: 10px;
+  letter-spacing: 3px;
+  margin-bottom: 27px;
+}
+
+.divider {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    #68469a,
+    transparent
+  );
+  margin: 20px 0;
+}
+
+.section {
+  padding: 19px;
+  margin-bottom: 17px;
+  border: 1px solid #38264e;
+  border-radius: 17px;
+  background: linear-gradient(145deg,#1d1729,#14111d);
+}
+
+.section-title {
+  color: #C4B5FD;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 13px 0;
+  color: white;
+  text-decoration: none;
+  text-align: left;
+  transition: .2s;
+}
+
+.social-link:hover {
+  transform: translateX(4px);
+}
+
+.social-icon {
+  width: 43px;
+  height: 43px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: #33204e;
+  color: #C4B5FD;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.social-info {
+  flex: 1;
+}
+
+.social-info strong {
+  display: block;
+  font-size: 14px;
+}
+
+.social-info small {
+  display: block;
+  margin-top: 5px;
+  color: #A1A1AA;
+  font-size: 11px;
+}
+
+.arrow {
+  color: #A78BFA;
+  font-size: 19px;
+}
+
+.payment-description {
+  color: #A1A1AA;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.qr-image {
+  display: block;
+  width: 100%;
+  max-width: 235px;
+  height: auto;
+  padding: 7px;
+  margin: 15px auto;
+  background: white;
+  border-radius: 12px;
+}
+
+.number {
+  display: block;
+  color: #fff;
+  font-size: 21px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 17px 0;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 11px;
+  border: 1px solid #7650b0;
+  background: #352052;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+button:hover {
+  background: #59348a;
+  transform: translateY(-2px);
+}
+
+.save-button {
+  margin-top: 2px;
+  padding: 16px;
+  background: linear-gradient(120deg,#7C3AED,#5124A0);
+  border: 1px solid #A78BFA;
+  box-shadow: 0 5px 22px #8B5CF633;
+}
+
+footer {
+  margin-top: 25px;
+  color: #777080;
+  font-size: 9px;
+  letter-spacing: 3px;
+}
+</style>
+</head>
+
+<body>
+
+<main class="card">
+
+  <div class="brand">PERSONAL BRAND</div>
+
+  <!-- PROFILE PHOTO -->
+  <div class="avatar">
+    <img
+      src="chris-profile.jpg"
+      alt="CHRIS Profile Photo"
+    >
+  </div>
+
+  <h1>CHRIS</h1>
+  <div class="subtitle">DIGITAL CONTACT CARD</div>
+
+  <div class="divider"></div>
+
+  <!-- SOCIAL MEDIA -->
+  <section class="section">
+
+    <div class="section-title">CONNECT WITH ME</div>
+
+    <a class="social-link"
+       href="https://www.facebook.com/chrislauron02/"
+       target="_blank"
+       rel="noopener noreferrer">
+
+      <span class="social-icon">f</span>
+
+      <span class="social-info">
+        <strong>Facebook</strong>
+        <small>chrislauron02</small>
+      </span>
+
+      <span class="arrow">↗</span>
+    </a>
+
+    <a class="social-link"
+       href="https://www.instagram.com/chris.lauron/"
+       target="_blank"
+       rel="noopener noreferrer">
+
+      <span class="social-icon">◎</span>
+
+      <span class="social-info">
+        <strong>Instagram</strong>
+        <small>@chris.lauron</small>
+      </span>
+
+      <span class="arrow">↗</span>
+    </a>
+
+  </section>
+
+  <!-- GCASH PAYMENT -->
+  <section class="section">
+
+    <div class="section-title">GCASH PAYMENT</div>
+
+    <p class="payment-description">
+      Scan my QR code to send payment
+    </p>
+
+    <img
+      class="qr-image"
+      src="gcash-qr.jpg"
+      alt="CHRIS GCash QR Code"
+    >
+
+    <span class="number">0931 026 3579</span>
+
+    <button type="button" onclick="copyNumber()">
+      COPY GCASH NUMBER
+    </button>
+
+  </section>
+
+  <!-- SAVE CONTACT -->
+  <button
+    type="button"
+    class="save-button"
+    onclick="saveContact()">
+    ♡ &nbsp; SAVE MY CONTACT
+  </button>
+
+  <footer>
+    THANK YOU FOR CONNECTING
+  </footer>
+
+</main>
+
+<script>
+function copyNumber() {
+  const number = "09310263579";
+
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(number)
+      .then(() => alert("GCash number copied!"))
+      .catch(() => alert("Please copy: " + number));
+  } else {
+    alert("Please copy this number: " + number);
+  }
+}
+
+function saveContact() {
+  const vcard = [
+    "BEGIN:VCARD",
+    "VERSION:3.0",
+    "FN:CHRIS",
+    "TEL;TYPE=CELL:09310263579",
+    "URL:https://www.facebook.com/chrislauron02/",
+    "END:VCARD"
+  ].join("\r\n");
+
+  const blob = new Blob([vcard], {
+    type: "text/vcard;charset=utf-8"
+  });
+
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+
+  link.href = url;
+  link.download = "CHRIS.vcf";
+
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+
+  URL.revokeObjectURL(url);
+}
+</script>
+
+</body>
+</html>
